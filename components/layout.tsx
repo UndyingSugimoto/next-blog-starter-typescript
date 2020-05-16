@@ -20,3 +20,5 @@ const Layout: React.FC<Props> = ({ preview, children }) => {
     </>
   );
 };
+
+export default Layout;
