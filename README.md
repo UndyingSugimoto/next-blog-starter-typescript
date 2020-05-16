@@ -1,4 +1,4 @@
-# A statically generated blog example using Next.js and Markdown
+# A statically generated blog example using Next.js and Markdown and TypeScript
 
 This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using markdown files as the data source.
 
@@ -8,7 +8,7 @@ To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) a
 
 ## Demo
 
-[https://next-blog-starter.now.sh/](https://next-blog-starter.now.sh/)
+[https://next-blog-starter-typescript.now.sh/](https://next-blog-starter-typescript.now.sh/)
 
 ### Related examples
 
