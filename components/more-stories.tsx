@@ -1,16 +1,10 @@
 import React from "react";
 import PostPreview from "./post-preview";
 import Author from "../types/author";
+import Post from "../types/post";
 
 type Props = {
-  posts: {
-    slug: string;
-    title: string;
-    date: string;
-    coverImage: string;
-    author: Author;
-    excerpt: string;
-  }[];
+  posts: Post[];
 };
 
 const MoreStories: React.FC<Props> = ({ posts }) => {

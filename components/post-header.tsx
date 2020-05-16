@@ -33,3 +33,5 @@ const PostHeader: React.FC<Props> = ({ title, coverImage, date, author }) => {
     </>
   );
 };
+
+export default PostHeader;
