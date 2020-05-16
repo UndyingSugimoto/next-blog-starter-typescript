@@ -1,16 +1,27 @@
-import Avatar from '../components/avatar'
-import DateFormater from '../components/date-formater'
-import CoverImage from './cover-image'
-import Link from 'next/link'
+import React from "react";
+import Avatar from "./avatar";
+import DateFormater from "./date-formater";
+import CoverImage from "./cover-image";
+import Link from "next/link";
+import Author from "../types/author";
 
-export default function PostPreview({
+type Props = {
+  title: string;
+  coverImage: string;
+  date: string;
+  excerpt: string;
+  author: Author;
+  slug: string;
+};
+
+const PostPreview: React.FC<Props> = ({
   title,
   coverImage,
   date,
   excerpt,
   author,
   slug,
-}) {
+}) => {
   return (
     <div>
       <div className="mb-5">
@@ -27,5 +38,7 @@ export default function PostPreview({
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
-  )
-}
+  );
+};
+
+export default PostPreview;
